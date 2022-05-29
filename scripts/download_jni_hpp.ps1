@@ -7,5 +7,6 @@ $jdk_folder = "./jdk/"
 $jar_folder = "./app/java/"
 
 # Download ini-hpp header and jar (java 17)
+New-Item $jar_folder -itemType Directory | Out-Null
 Invoke-WebRequest $jni_hpp -OutFile "$($jdk_folder)include/jni.hpp" | Out-Null
 Invoke-WebRequest $jni_hpp_jar -OutFile "$($jar_folder)jni.hpp.jar" | Out-Null

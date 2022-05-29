@@ -28,25 +28,6 @@ protected:
         Args.IgnoreUnrecognized(false);
         Args.AddClasspathJarFolder(std::filesystem::current_path() / "java");
     }
-
-    // This function will be called when java can't load the class using the default classpath. 
-    jsize LoadClass(const std::string& ClassName, char** ClassContent) override
-    {
-        std::cout << "[JavaCLS]: Requested Class \"" << ClassName << "\"" << std::endl;
-        return 0;
-    }
-
-    // All System.out messages are redirected to this function
-    void SystemOut(const char* Message) override
-    {
-        std::cout << "[JavaMSG] " << Message;
-    }
-
-    // All System.err message are redirected to this function
-    void SystemErr(const char* Message) override
-    {
-        std::cout << "[JavaErr] " << Message;
-    }
 };
 
 // Applications main entry point
