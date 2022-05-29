@@ -1,0 +1,23 @@
+# Java JDK
+/jdk
+
+# Visual studio
+/.vs
+**.sln
+**.vcxproj
+**.vcxproj.user
+
+# Eclipse
+/.metadata
+
+# Conan
+/conan.lock
+/conanbuildinfo.premake.lua
+/conanbuildinfo.txt
+/conaninfo.txt
+/graph_info.json
+
+# Binaries
+/bin
+/*.zip
+/*.exe

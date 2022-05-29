@@ -1,0 +1,7 @@
+# Ignor JRE
+/jre
+
+# Ignore all produced binaries
+**.dll
+**.exe
+**.jar
